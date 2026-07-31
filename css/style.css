@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    background-color: #BDE8F5;
+}
+
+.welcome {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+.welcome-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome-txt {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Sacramento", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5.6rem;
+    color: #1C4D8D;
+    margin-top: 100px;
+}
+
+
+.summary {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+
+.summary-img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+
+.summary-txt {
+    color: #1C4D8D;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+.education {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.education-txt {
+    color: #1C4D8D;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.work {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.work-img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.work-txt {
+    color: #1C4D8D;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.skills {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+    max-width: 200px;
+    justify-self: center;
+}
+
+.skill img {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+
+.skills-txt {
+    color: #1C4D8D;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.head {
+    color: #4988C4;
+    margin: 0;
+    font-family: "Sacramento", cursive;
+    font-style: normal;
+    font-size: 75px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #0F2854;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-head {
+    color: #BDE8F5;
+    margin-bottom: 50px;
+}
+
+.social {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    margin: 0 50px 50px 50px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .welcome {
+        position: relative;
+        width: 100%;
+    }
+
+    .welcome-txt {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .welcome-txt h1 {
+        text-align: center;
+        margin: 0;
+        margin-top: 150px;
+    }
+
+    .summary-txt {
+        text-align: center;
+        margin: 0;
+    }
+
+    .education-txt {
+        text-align: center;
+        margin: 0;
+    }
+
+    .work-txt {
+        text-align: center;
+        margin: 0;
+    }
+
+    .skills {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .skill {
+        flex-direction: row;
+        margin-bottom: 50px;
+        max-height: 200px;
+        width: 500px;
+    }
+
+    .skills-txt {
+        margin-left: 5px;
+        font-size: 25px;
+
+    }
+
+    .footer {
+        height: 250px;
+    }
+
+    .footer-head {
+        color: #BDE8F5;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin: 0 20px 20px 20px;
+    }
+}
